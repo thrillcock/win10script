@@ -17,6 +17,7 @@ $tweaks = @(
 	"InstallWinrar",
 	"InstallNotepadplusplus",
 	"InstallVlc",
+	"InstallBrowserTrio",
 
 	### Windows Apps
 	"DebloatAll",
@@ -182,6 +183,14 @@ Function InstallTitusProgs {
 	Start-BitsTransfer -Source "https://dl5.oo-software.com/files/ooshutup10/OOSU10.exe" -Destination OOSU10.exe
 	./OOSU10.exe ooshutup10.cfg /quiet
 }
+Function Openshell {
+	Write-Output "Installing Open-Shell"
+	choco install open-shell -y
+	}
+Function InstallBrowserTrio {
+	Write-Output "Installing Brave, Chrome, Firefox"
+	choco install googlechrome firefox brave -y	
+	}
 
 Function InstallAdobe {
 	Write-Output "Installing Adobe Acrobat Reader"
