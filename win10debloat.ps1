@@ -32,9 +32,9 @@ $tweaks = @(
 	### External Program Setup
 	"InstallTitusProgs", #REQUIRED FOR OTHER PROGRAM INSTALLS!
 	"InstallAdobe",
-	"Install7Zip",
+	"InstallWinrar",
 	"InstallNotepadplusplus",
-	"InstallMediaPlayerClassic",
+	"InstallVlc",
 
 	### Windows Apps
 	"DebloatAll",
@@ -92,7 +92,7 @@ $tweaks = @(
 	"DisableStorageSense",        # "EnableStorageSense",
 	"DisableDefragmentation",     # "EnableDefragmentation",
 	"DisableSuperfetch",          # "EnableSuperfetch",
-	"DisableIndexing",            # "EnableIndexing",
+	"EnableIndexing",		# "DisableIndexing",            
 	"SetBIOSTimeUTC",             # "SetBIOSTimeLocal",
 	"DisableHibernation",		# "EnableHibernation",          # 
 	"EnableSleepButton",		# "DisableSleepButton",         
@@ -211,9 +211,9 @@ Function InstallJava {
 	choco install jre8 -y
 }
 
-Function Install7Zip {
-	Write-Output "Installing 7-Zip"
-	choco install 7zip -y
+Function InstallWinrar {
+	Write-Output "Installing Winrar"
+	choco install winrar -y
 }
 
 Function InstallNotepadplusplus {
@@ -221,9 +221,9 @@ Function InstallNotepadplusplus {
 	choco install notepadplusplus -y
 }
 
-Function InstallMediaPlayerClassic {
-	Write-Output "Installing Media Player Classic (VLC Alternative)"
-	choco install mpc-hc -y
+Function Installvlc {
+	Write-Output "Installing VLC"
+	choco install vlc -y
 }
 
 ##########
