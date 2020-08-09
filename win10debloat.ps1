@@ -18,6 +18,7 @@ $tweaks = @(
 	"InstallNotepadplusplus",
 	"InstallVlc",
 	"InstallBrowserTrio",
+	"Openshell",
 
 	### Windows Apps
 	"DebloatAll",
